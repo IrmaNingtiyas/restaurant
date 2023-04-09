@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(110deg, #f7f5f2 68%, turquoise 32%);
+}
+.all-content{
+    background: #f7f5f2;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background: turquoise;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* navbar start */
+#navbar{
+    background-color: turquoise;
+}
+#logo img{
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+}
+.navbar-nav{
+    margin-left: 50px;
+}
+.nav-item .nav-link{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+    background: #f7f5f2;
+    border-radius: 5px;
+    color: black;
+}
+#navbar form button{
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+@media screen and (max-width:600px){
+    .nav-item .nav-link{
+        height: auto;
+    }
+}
+/* navbar end */
+
+
+
+
+/* home content start*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    font-family: 'Merriweather', serif;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 92%;
+    animation: c 5s linear infinite;
+}
+@keyframes c{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+}
+.home .content{
+    flex: 1 1 300px;
+    margin-top: 50px;
+}
+.content h1{
+    margin-left: 42px;
+    font-size: 65px;
+    font-weight: bold;
+    text-shadow: -1px 0px 0px black;
+    font-family: 'Merriweather', serif;
+}
+.content h1 span{
+    color: turquoise;
+    text-shadow: 1px 1px 1px black;
+    font-size: 100px;
+    font-weight: bold;
+}
+.content p{
+    margin-left: 42px;
+}
+#btn{
+    margin-left: 42px;
+}
+#btn button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn button:hover{
+    background-color: turquoise;
+    color: black;
+    border: none;
+}
+#btn span{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (max-width:1300px){
+    .home-section{
+        height: 110vh;
+    }
+}
+@media screen and (max-width:800px){
+    .home-section{
+        height: 115vh;
+    }
+}
+@media screen and (max-width:650px){
+    .home-section{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:500px){
+    .content h1 span{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width:400px){
+    .content h1{
+        font-size: 30px;
+    }
+    .content h1 span{
+        font-size: 50px;
+    }
+}
+/* home content end*/
+
+
+
+
+/* about section start */
+#about{
+    width: 100%;
+    height: 100vh;
+}
+#about .container{
+    padding-top: 70px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+.heading span{
+    color: turquoise;
+}
+#about .card{
+    border-radius: 10px;
+}
+#about .card img{
+    border-radius: 10px;
+}
+#about .col-md-6 h3{ 
+    font-size: 30px;
+    font-weight: bold;
+}
+#about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid turquoise;
+    color: turquoise;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about-btn:hover{
+    background-color: turquoise;
+    color: white;
+}
+@media screen and (max-width:1200px){
+    #about p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:800px){
+    #about p{
+        font-size: 15px;;
+    }
+    #about{
+        height: 120vh;
+        width: 100%;
+    }
+}
+/* about section end */
+
+
+
+
+
+
+
+
+/* menu start */
+#menu{
+    width: 100%;
+    margin-top: 60px;
+}
+.heading3{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid turquoise;
+}
+#container2{
+    margin-top: 50px;
+}
+#menu .card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#menu .card:hover{
+    background-color: turquoise;
+}
+.star i{
+    color: black;
+}
+#menu h3{
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    font-size: 25px;
+}
+#menu p{
+    font-size: 16px;
+    color: black;
+    padding-top: 10px;
+}
+#menu p span{
+    float: right;
+    cursor: pointer;
+}
+/* menu end */
+
+
+/* banner start*/
+.banner{
+    margin-top: 100px;
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/banner.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.banner h3{
+    padding-top: 130px;
+    color: turquoise;
+    text-shadow: 1px 1px 1px black;
+    font-size: 50px;
+}
+#btnorder{
+    width: 200px;
+    height: 32px;
+    background-color: turquoise;
+    color: black;
+    border: 2px solid turquoise;
+    transition: 0.5s ease;
+}
+#btnorder:hover{
+    background-color: turquoise;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+/* banner end */
+
+
+
+/* drink section start */
+#drink{
+    width: 100%;
+}
+.heading4{
+    text-align: center;
+    color: img;
+    font-size: 40px;
+    padding-top: 100px;
+    font-weight: bold;
+    border-bottom: 2px solid turquoise;
+}
+#container3{
+    margin-top: 30px;
+}
+#drink .card:hover{
+    background-color: turquoise;
+}
+#drink h3{
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+#drink p{
+    color: black;
+    padding-top: 10px;
+}
+#drink p span{
+    float: right;
+    cursor: pointer;
+}
+/* drink section end */
+
+
+
+
+/* our gallary start */
+#gallary{
+    width: 100%;
+}
+.heading5{
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#gallary .heading5 span{
+    color: turquoise;
+}
+#gallary .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#gallary .card img{
+    border-radius: 10px;
+}
+/* our gallary end */
+
+
+
+
+
+/* contact start */
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+#contact .container{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(90deg, white 80%, turquoise 20%);
+    border-radius: 10px;
+}
+.heading6{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.heading6 span{
+    color: turquoise;
+}
+#contact p{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+#contact input{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid turquoise;
+}
+#contact-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    background: turquoise;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#contact-btn:hover{
+    background-color: turquoise;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#col{
+    width: 40%;
+    height: 56vh;
+    background: #f7f5f2;
+    margin-top: 78px;
+}
+#contact h1{
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#contact #col p{
+    font-size: 15px;
+    color: black;
+    margin-left: 13px;
+    margin-top: 30px;
+}
+@media screen and (max-width:766px){
+    #contact .container{
+        background: white;
+    }
+    #col{
+        width: 100%;
+        background: turquoise;
+    }
+    #contact{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:400px){
+    #contact input{
+        width: 250px;
+    }
+}
+/* contact end */
+
+
+
+
+
+/* blogs start */
+#blogs{
+    width: 100%;
+    margin-top: 60px;
+}
+#blogs .heading7{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+#blogs .heading7 span{
+    color: turquoise;
+}
+#blogs .container{
+    margin-top: 60px;
+}
+#blogs h5{
+    color: turquoise;
+}
+/* blogs end */
+
+
+
+
+/* footer start */
+#footer{
+    width: 100%;
+    background: turquoise;
+    margin-top: 50px;
+}
+.footer-logo img{
+    width: 180px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.socail-links i{
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.credits{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#credits a span{
+    color: black;
+}
+.copyright span{
+    color: black;
+}
+/* footer end */
+
+
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+}
